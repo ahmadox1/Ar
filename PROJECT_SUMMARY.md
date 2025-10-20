@@ -131,7 +131,9 @@ This environment cannot access:
 2. Install Android Studio
 
 3. Clone this repository:
+   # Use the actual repository URL from GitHub
    git clone https://github.com/ahmadox1/Ar.git
+   cd Ar
 
 4. Open the project in Android Studio:
    File > Open > Select "Ar" folder
@@ -141,8 +143,12 @@ This environment cannot access:
 
 6. Add Google Maps API Key:
    - Get key from: https://console.cloud.google.com/
+   - Enable "Maps SDK for Android" API
    - Open: app/src/main/AndroidManifest.xml
-   - Replace: YOUR_GOOGLE_MAPS_API_KEY
+   - Find this line (around line 36):
+     <meta-data android:name="com.google.android.geo.API_KEY"
+                android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+   - Replace YOUR_GOOGLE_MAPS_API_KEY with your actual API key
 
 7. Build APK:
    Build > Build Bundle(s) / APK(s) > Build APK(s)
@@ -278,7 +284,7 @@ Read these files in order:
 
 | Problem | Solution |
 |---------|----------|
-| Can't download dependencies | Enable VPN or use mirror |
+| Can't download dependencies | 1. Check internet connection<br>2. Use mirror repository (see MANUAL_BUILD_GUIDE.md)<br>3. Configure proxy in gradle.properties<br>4. As last resort, use VPN |
 | Out of memory | Increase heap in gradle.properties |
 | SDK not found | Set ANDROID_HOME variable |
 | Permission denied | Run: `chmod +x gradlew` |
