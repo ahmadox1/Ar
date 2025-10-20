@@ -29,10 +29,10 @@
             android:name="com.google.ar.core"
             android:value="required" />
             
-        <!-- Google Maps API Key (placeholder - will be replaced with actual key later) -->
+        <!-- Google Maps API Key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+            android:value="AIzaSyDummy_Key_Replace_With_Real_One_From_Google_Console" />
 
         <!-- Main Activity -->
         <activity
