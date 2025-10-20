@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AR Memory</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="location_permission_required">Location permission is required</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="view_map">View Map</string>
+    <string name="create_memory">Create Memory</string>
+    <string name="memory_text_hint">Write your memory here...</string>
+    <string name="save_memory">Save Memory</string>
+    <string name="cancel">Cancel</string>
+    <string name="memory_saved">Memory saved successfully</string>
+    <string name="memory_nearby">Memory nearby!</string>
+    <string name="view_memory">View Memory</string>
+    <string name="no_memories">No memories found</string>
+    <string name="ar_not_supported">AR is not supported on this device</string>
+    <string name="place_memory">Tap to place memory</string>
+</resources>
